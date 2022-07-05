@@ -10,3 +10,8 @@ export interface Stock {
   id: number;
   amount: number;
 }
+
+export interface ISaveStorageItems  {
+  key: string,
+  value: any
+}
