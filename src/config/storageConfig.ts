@@ -1,5 +1,5 @@
 const storageAlias =  {
-    cart: '@RocketSeat:cart'
+    cart: '@RocketShoes:cart'
 }
 
 export default storageAlias

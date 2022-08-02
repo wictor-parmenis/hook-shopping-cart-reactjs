@@ -30,15 +30,16 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
 
     if (storagedCart) {
       const parsedStoragedCart = JSON.parse(storagedCart);
-      setCart(parsedStoragedCart);
+      return parsedStoragedCart;
     }
 
     return [];
   });
+  
   const saveCartInStorage = useCallback(() => saveLocalStorage({
     key: storageAlias.cart,
     value: cart
-  }), [cart, setCart])
+  }), [cart])
 
 
   const addProduct = async (productId: number) => {
