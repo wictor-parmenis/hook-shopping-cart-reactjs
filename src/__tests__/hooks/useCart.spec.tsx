@@ -66,7 +66,7 @@ describe('useCart Hook', () => {
     );
   });
 
-  it.only('should be able to add a new product', async () => {
+  it('should be able to add a new product', async () => {
     const productId = 3;
 
     apiMock.onGet(`stock/${productId}`).reply(200, {

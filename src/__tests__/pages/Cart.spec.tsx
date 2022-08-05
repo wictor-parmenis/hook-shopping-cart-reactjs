@@ -104,7 +104,7 @@ describe('Cart Page', () => {
     const { getAllByTestId, rerender } = render(<Cart />);
 
     const [removeFirstProduct] = getAllByTestId('remove-product');
-    const [firstProduct, secondProduct] = getAllByTestId('product');
+    const [secondProduct, firstProduct] = getAllByTestId('product');
 
     expect(firstProduct).toBeInTheDocument();
     expect(secondProduct).toBeInTheDocument();
